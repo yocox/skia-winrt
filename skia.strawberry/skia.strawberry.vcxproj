@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ext\convolver_SSE2.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\ext\convolver.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\ext\image_operations.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\src\core\Sk64.cpp" />
+    <ClCompile Include="..\src\core\SkAAClip.cpp" />
+    <ClCompile Include="..\src\core\SkAdvancedTypefaceMetrics.cpp" />
+    <ClCompile Include="..\src\core\SkAlphaRuns.cpp" />
+    <ClCompile Include="..\src\core\SkAnnotation.cpp" />
+    <ClCompile Include="..\src\core\SkBBoxHierarchy.cpp" />
+    <ClCompile Include="..\src\core\SkBBoxHierarchyRecord.cpp" />
+    <ClCompile Include="..\src\core\SkBBoxRecord.cpp" />
+    <ClCompile Include="..\src\core\SkBitmap.cpp" />
+    <ClCompile Include="..\src\core\SkBitmapFilter.cpp" />
+    <ClCompile Include="..\src\core\SkBitmapHeap.cpp" />
+    <ClCompile Include="..\src\core\SkBitmapProcShader.cpp" />
+    <ClCompile Include="..\src\core\SkBitmapProcState.cpp" />
+    <ClCompile Include="..\src\core\SkBitmapProcState_matrixProcs.cpp" />
+    <ClCompile Include="..\src\core\SkBitmapScaler.cpp" />
+    <ClCompile Include="..\src\core\SkBitmap_scroll.cpp" />
+    <ClCompile Include="..\src\core\SkBlitMask_D32.cpp" />
+    <ClCompile Include="..\src\core\SkBlitRow_D16.cpp" />
+    <ClCompile Include="..\src\core\SkBlitRow_D32.cpp" />
+    <ClCompile Include="..\src\core\SkBlitter.cpp" />
+    <ClCompile Include="..\src\core\SkBlitter_A1.cpp" />
+    <ClCompile Include="..\src\core\SkBlitter_A8.cpp" />
+    <ClCompile Include="..\src\core\SkBlitter_ARGB32.cpp" />
+    <ClCompile Include="..\src\core\SkBlitter_RGB16.cpp" />
+    <ClCompile Include="..\src\core\SkBlitter_Sprite.cpp" />
+    <ClCompile Include="..\src\core\SkBuffer.cpp" />
+    <ClCompile Include="..\src\core\SkCanvas.cpp" />
+    <ClCompile Include="..\src\core\SkChunkAlloc.cpp" />
+    <ClCompile Include="..\src\core\SkClipStack.cpp" />
+    <ClCompile Include="..\src\core\SkColor.cpp" />
+    <ClCompile Include="..\src\core\SkColorFilter.cpp" />
+    <ClCompile Include="..\src\core\SkColorTable.cpp" />
+    <ClCompile Include="..\src\core\SkComposeShader.cpp" />
+    <ClCompile Include="..\src\core\SkConfig8888.cpp" />
+    <ClCompile Include="..\src\core\SkConvolver.cpp" />
+    <ClCompile Include="..\src\core\SkCordic.cpp" />
+    <ClCompile Include="..\src\core\SkCubicClipper.cpp" />
+    <ClCompile Include="..\src\core\SkData.cpp" />
+    <ClCompile Include="..\src\core\SkDebug.cpp" />
+    <ClCompile Include="..\src\core\SkDeque.cpp" />
+    <ClCompile Include="..\src\core\SkDevice.cpp" />
+    <ClCompile Include="..\src\core\SkDeviceProfile.cpp" />
+    <ClCompile Include="..\src\core\SkDither.cpp" />
+    <ClCompile Include="..\src\core\SkDraw.cpp" />
+    <ClCompile Include="..\src\core\SkDrawLooper.cpp" />
+    <ClCompile Include="..\src\core\SkEdge.cpp" />
+    <ClCompile Include="..\src\core\SkEdgeBuilder.cpp" />
+    <ClCompile Include="..\src\core\SkEdgeClipper.cpp" />
+    <ClCompile Include="..\src\core\SkError.cpp" />
+    <ClCompile Include="..\src\core\SkFilterProc.cpp" />
+    <ClCompile Include="..\src\core\SkFilterShader.cpp" />
+    <ClCompile Include="..\src\core\SkFlate.cpp" />
+    <ClCompile Include="..\src\core\SkFlattenable.cpp" />
+    <ClCompile Include="..\src\core\SkFlattenableBuffers.cpp" />
+    <ClCompile Include="..\src\core\SkFloat.cpp" />
+    <ClCompile Include="..\src\core\SkFloatBits.cpp" />
+    <ClCompile Include="..\src\core\SkFontDescriptor.cpp" />
+    <ClCompile Include="..\src\core\SkFontHost.cpp" />
+    <ClCompile Include="..\src\core\SkFontStream.cpp" />
+    <ClCompile Include="..\src\core\SkGeometry.cpp" />
+    <ClCompile Include="..\src\core\SkGlyphCache.cpp" />
+    <ClCompile Include="..\src\core\SkGraphics.cpp" />
+    <ClCompile Include="..\src\core\SkImageFilter.cpp" />
+    <ClCompile Include="..\src\core\SkImageFilterUtils.cpp" />
+    <ClCompile Include="..\src\core\SkInstCnt.cpp" />
+    <ClCompile Include="..\src\core\SkLineClipper.cpp" />
+    <ClCompile Include="..\src\core\SkMallocPixelRef.cpp" />
+    <ClCompile Include="..\src\core\SkMask.cpp" />
+    <ClCompile Include="..\src\core\SkMaskFilter.cpp" />
+    <ClCompile Include="..\src\core\SkMaskGamma.cpp" />
+    <ClCompile Include="..\src\core\SkMath.cpp" />
+    <ClCompile Include="..\src\core\SkMatrix.cpp" />
+    <ClCompile Include="..\src\core\SkMetaData.cpp" />
+    <ClCompile Include="..\src\core\SkMipMap.cpp" />
+    <ClCompile Include="..\src\core\SkOrderedReadBuffer.cpp" />
+    <ClCompile Include="..\src\core\SkOrderedWriteBuffer.cpp" />
+    <ClCompile Include="..\src\core\SkPackBits.cpp" />
+    <ClCompile Include="..\src\core\SkPaint.cpp" />
+    <ClCompile Include="..\src\core\SkPaintPriv.cpp" />
+    <ClCompile Include="..\src\core\SkPath.cpp" />
+    <ClCompile Include="..\src\core\SkPathEffect.cpp" />
+    <ClCompile Include="..\src\core\SkPathHeap.cpp" />
+    <ClCompile Include="..\src\core\SkPathMeasure.cpp" />
+    <ClCompile Include="..\src\core\SkPicture.cpp" />
+    <ClCompile Include="..\src\core\SkPictureFlat.cpp" />
+    <ClCompile Include="..\src\core\SkPicturePlayback.cpp" />
+    <ClCompile Include="..\src\core\SkPictureRecord.cpp" />
+    <ClCompile Include="..\src\core\SkPictureStateTree.cpp" />
+    <ClCompile Include="..\src\core\SkPixelRef.cpp" />
+    <ClCompile Include="..\src\core\SkPoint.cpp" />
+    <ClCompile Include="..\src\core\SkProcSpriteBlitter.cpp" />
+    <ClCompile Include="..\src\core\SkPtrRecorder.cpp" />
+    <ClCompile Include="..\src\core\SkQuadClipper.cpp" />
+    <ClCompile Include="..\src\core\SkRasterClip.cpp" />
+    <ClCompile Include="..\src\core\SkRasterizer.cpp" />
+    <ClCompile Include="..\src\core\SkRect.cpp" />
+    <ClCompile Include="..\src\core\SkRefCnt.cpp" />
+    <ClCompile Include="..\src\core\SkRefDict.cpp" />
+    <ClCompile Include="..\src\core\SkRegion.cpp" />
+    <ClCompile Include="..\src\core\SkRegion_path.cpp" />
+    <ClCompile Include="..\src\core\SkRRect.cpp" />
+    <ClCompile Include="..\src\core\SkRTree.cpp" />
+    <ClCompile Include="..\src\core\SkScalar.cpp" />
+    <ClCompile Include="..\src\core\SkScaledImageCache.cpp" />
+    <ClCompile Include="..\src\core\SkScalerContext.cpp" />
+    <ClCompile Include="..\src\core\SkScan.cpp" />
+    <ClCompile Include="..\src\core\SkScan_Antihair.cpp" />
+    <ClCompile Include="..\src\core\SkScan_AntiPath.cpp" />
+    <ClCompile Include="..\src\core\SkScan_Hairline.cpp" />
+    <ClCompile Include="..\src\core\SkScan_Path.cpp" />
+    <ClCompile Include="..\src\core\SkShader.cpp" />
+    <ClCompile Include="..\src\core\SkSpriteBlitter_ARGB32.cpp" />
+    <ClCompile Include="..\src\core\SkSpriteBlitter_RGB16.cpp" />
+    <ClCompile Include="..\src\core\SkStream.cpp" />
+    <ClCompile Include="..\src\core\SkString.cpp" />
+    <ClCompile Include="..\src\core\SkStringUtils.cpp" />
+    <ClCompile Include="..\src\core\SkStroke.cpp" />
+    <ClCompile Include="..\src\core\SkStrokeRec.cpp" />
+    <ClCompile Include="..\src\core\SkStrokerPriv.cpp" />
+    <ClCompile Include="..\src\core\SkTileGrid.cpp" />
+    <ClCompile Include="..\src\core\SkTileGridPicture.cpp" />
+    <ClCompile Include="..\src\core\SkTLS.cpp" />
+    <ClCompile Include="..\src\core\SkTSearch.cpp" />
+    <ClCompile Include="..\src\core\SkTypeface.cpp" />
+    <ClCompile Include="..\src\core\SkTypefaceCache.cpp" />
+    <ClCompile Include="..\src\core\SkUnPreMultiply.cpp" />
+    <ClCompile Include="..\src\core\SkUtils.cpp" />
+    <ClCompile Include="..\src\core\SkWriter32.cpp" />
+    <ClCompile Include="..\src\core\SkXfermode.cpp" />
+    <ClCompile Include="..\src\effects\gradients\SkBitmapCache.cpp" />
+    <ClCompile Include="..\src\effects\gradients\SkClampRange.cpp" />
+    <ClCompile Include="..\src\effects\gradients\SkGradientShader.cpp" />
+    <ClCompile Include="..\src\effects\gradients\SkLinearGradient.cpp" />
+    <ClCompile Include="..\src\effects\gradients\SkRadialGradient.cpp" />
+    <ClCompile Include="..\src\effects\gradients\SkSweepGradient.cpp" />
+    <ClCompile Include="..\src\effects\gradients\SkTwoPointConicalGradient.cpp" />
+    <ClCompile Include="..\src\effects\gradients\SkTwoPointRadialGradient.cpp" />
+    <ClCompile Include="..\src\effects\Sk1DPathEffect.cpp" />
+    <ClCompile Include="..\src\effects\Sk2DPathEffect.cpp" />
+    <ClCompile Include="..\src\effects\SkArithmeticMode.cpp" />
+    <ClCompile Include="..\src\effects\SkAvoidXfermode.cpp" />
+    <ClCompile Include="..\src\effects\SkBicubicImageFilter.cpp" />
+    <ClCompile Include="..\src\effects\SkBitmapSource.cpp" />
+    <ClCompile Include="..\src\effects\SkBlurDrawLooper.cpp" />
+    <ClCompile Include="..\src\effects\SkBlurImageFilter.cpp" />
+    <ClCompile Include="..\src\effects\SkBlurMask.cpp" />
+    <ClCompile Include="..\src\effects\SkBlurMaskFilter.cpp" />
+    <ClCompile Include="..\src\effects\SkColorFilterImageFilter.cpp" />
+    <ClCompile Include="..\src\effects\SkColorFilters.cpp" />
+    <ClCompile Include="..\src\effects\SkColorMatrix.cpp" />
+    <ClCompile Include="..\src\effects\SkColorMatrixFilter.cpp" />
+    <ClCompile Include="..\src\effects\SkCornerPathEffect.cpp" />
+    <ClCompile Include="..\src\effects\SkDashPathEffect.cpp" />
+    <ClCompile Include="..\src\effects\SkDiscretePathEffect.cpp" />
+    <ClCompile Include="..\src\effects\SkDisplacementMapEffect.cpp" />
+    <ClCompile Include="..\src\effects\SkEmbossMask.cpp" />
+    <ClCompile Include="..\src\effects\SkEmbossMaskFilter.cpp" />
+    <ClCompile Include="..\src\effects\SkKernel33MaskFilter.cpp" />
+    <ClCompile Include="..\src\effects\SkLayerDrawLooper.cpp" />
+    <ClCompile Include="..\src\effects\SkLayerRasterizer.cpp" />
+    <ClCompile Include="..\src\effects\SkLightingImageFilter.cpp" />
+    <ClCompile Include="..\src\effects\SkMagnifierImageFilter.cpp" />
+    <ClCompile Include="..\src\effects\SkMatrixConvolutionImageFilter.cpp" />
+    <ClCompile Include="..\src\effects\SkMergeImageFilter.cpp" />
+    <ClCompile Include="..\src\effects\SkMorphologyImageFilter.cpp" />
+    <ClCompile Include="..\src\effects\SkOffsetImageFilter.cpp" />
+    <ClCompile Include="..\src\effects\SkPaintFlagsDrawFilter.cpp" />
+    <ClCompile Include="..\src\effects\SkPixelXorXfermode.cpp" />
+    <ClCompile Include="..\src\effects\SkPorterDuff.cpp" />
+    <ClCompile Include="..\src\effects\SkStippleMaskFilter.cpp" />
+    <ClCompile Include="..\src\effects\SkTableColorFilter.cpp" />
+    <ClCompile Include="..\src\effects\SkTableMaskFilter.cpp" />
+    <ClCompile Include="..\src\effects\SkTestImageFilters.cpp" />
+    <ClCompile Include="..\src\effects\SkTransparentShader.cpp" />
+    <ClCompile Include="..\src\images\bmpdecoderhelper.cpp" />
+    <ClCompile Include="..\src\images\SkImageDecoder.cpp" />
+    <ClCompile Include="..\src\images\SkImageDecoder_FactoryRegistrar.cpp" />
+    <ClCompile Include="..\src\images\SkImageDecoder_libbmp.cpp" />
+    <ClCompile Include="..\src\images\SkImageDecoder_libgif.cpp" />
+    <ClCompile Include="..\src\images\SkImageDecoder_libico.cpp" />
+    <ClCompile Include="..\src\images\SkImageDecoder_libjpeg.cpp" />
+    <ClCompile Include="..\src\images\SkImageDecoder_libpng.cpp" />
+    <ClCompile Include="..\src\images\SkImageDecoder_libwebp.cpp" />
+    <ClCompile Include="..\src\images\SkImageDecoder_wbmp.cpp" />
+    <ClCompile Include="..\src\images\SkImageEncoder.cpp" />
+    <ClCompile Include="..\src\images\SkImageEncoder_Factory.cpp" />
+    <ClCompile Include="..\src\images\SkImageRef.cpp" />
+    <ClCompile Include="..\src\images\SkImageRefPool.cpp" />
+    <ClCompile Include="..\src\images\SkImageRef_GlobalPool.cpp" />
+    <ClCompile Include="..\src\images\SkImages.cpp" />
+    <ClCompile Include="..\src\images\SkJpegUtility.cpp" />
+    <ClCompile Include="..\src\images\SkMovie.cpp" />
+    <ClCompile Include="..\src\images\SkMovie_gif.cpp" />
+    <ClCompile Include="..\src\images\SkPageFlipper.cpp" />
+    <ClCompile Include="..\src\images\SkScaledBitmapSampler.cpp" />
+    <ClCompile Include="..\src\image\SkDataPixelRef.cpp" />
+    <ClCompile Include="..\src\image\SkImage.cpp" />
+    <ClCompile Include="..\src\image\SkImagePriv.cpp" />
+    <ClCompile Include="..\src\image\SkImage_Codec.cpp" />
+    <ClCompile Include="..\src\image\SkImage_Picture.cpp" />
+    <ClCompile Include="..\src\image\SkImage_Raster.cpp" />
+    <ClCompile Include="..\src\image\SkSurface.cpp" />
+    <ClCompile Include="..\src\image\SkSurface_Picture.cpp" />
+    <ClCompile Include="..\src\image\SkSurface_Raster.cpp" />
+    <ClCompile Include="..\src\lazy\SkBitmapFactory.cpp" />
+    <ClCompile Include="..\src\opts\opts_check_SSE2.cpp" />
+    <ClCompile Include="..\src\opts\SkBitmapFilter_opts_SSE2.cpp" />
+    <ClCompile Include="..\src\opts\SkBitmapProcState_opts_SSE2.cpp" />
+    <ClCompile Include="..\src\opts\SkBitmapProcState_opts_SSSE3.cpp" />
+    <ClCompile Include="..\src\opts\SkBlitRect_opts_SSE2.cpp" />
+    <ClCompile Include="..\src\opts\SkBlitRow_opts_SSE2.cpp" />
+    <ClCompile Include="..\src\opts\SkUtils_opts_SSE2.cpp" />
+    <ClCompile Include="..\src\pathops\SkAddIntersections.cpp" />
+    <ClCompile Include="..\src\pathops\SkDCubicIntersection.cpp" />
+    <ClCompile Include="..\src\pathops\SkDCubicLineIntersection.cpp" />
+    <ClCompile Include="..\src\pathops\SkDCubicToQuads.cpp" />
+    <ClCompile Include="..\src\pathops\SkDLineIntersection.cpp" />
+    <ClCompile Include="..\src\pathops\SkDQuadImplicit.cpp" />
+    <ClCompile Include="..\src\pathops\SkDQuadIntersection.cpp" />
+    <ClCompile Include="..\src\pathops\SkDQuadLineIntersection.cpp" />
+    <ClCompile Include="..\src\pathops\SkIntersections.cpp" />
+    <ClCompile Include="..\src\pathops\SkOpAngle.cpp" />
+    <ClCompile Include="..\src\pathops\SkOpContour.cpp" />
+    <ClCompile Include="..\src\pathops\SkOpEdgeBuilder.cpp" />
+    <ClCompile Include="..\src\pathops\SkOpSegment.cpp" />
+    <ClCompile Include="..\src\pathops\SkPathOpsBounds.cpp" />
+    <ClCompile Include="..\src\pathops\SkPathOpsCommon.cpp" />
+    <ClCompile Include="..\src\pathops\SkPathOpsCubic.cpp" />
+    <ClCompile Include="..\src\pathops\SkPathOpsDebug.cpp" />
+    <ClCompile Include="..\src\pathops\SkPathOpsLine.cpp" />
+    <ClCompile Include="..\src\pathops\SkPathOpsOp.cpp" />
+    <ClCompile Include="..\src\pathops\SkPathOpsPoint.cpp" />
+    <ClCompile Include="..\src\pathops\SkPathOpsQuad.cpp" />
+    <ClCompile Include="..\src\pathops\SkPathOpsRect.cpp" />
+    <ClCompile Include="..\src\pathops\SkPathOpsSimplify.cpp" />
+    <ClCompile Include="..\src\pathops\SkPathOpsTriangle.cpp" />
+    <ClCompile Include="..\src\pathops\SkPathOpsTypes.cpp" />
+    <ClCompile Include="..\src\pathops\SkPathWriter.cpp" />
+    <ClCompile Include="..\src\pathops\SkQuarticRoot.cpp" />
+    <ClCompile Include="..\src\pathops\SkReduceOrder.cpp" />
+    <ClCompile Include="..\src\pdf\SkPDFCatalog.cpp" />
+    <ClCompile Include="..\src\pdf\SkPDFDevice.cpp" />
+    <ClCompile Include="..\src\pdf\SkPDFDocument.cpp" />
+    <ClCompile Include="..\src\pdf\SkPDFFont.cpp" />
+    <ClCompile Include="..\src\pdf\SkPDFFormXObject.cpp" />
+    <ClCompile Include="..\src\pdf\SkPDFGraphicState.cpp" />
+    <ClCompile Include="..\src\pdf\SkPDFImage.cpp" />
+    <ClCompile Include="..\src\pdf\SkPDFPage.cpp" />
+    <ClCompile Include="..\src\pdf\SkPDFShader.cpp" />
+    <ClCompile Include="..\src\pdf\SkPDFStream.cpp" />
+    <ClCompile Include="..\src\pdf\SkPDFTypes.cpp" />
+    <ClCompile Include="..\src\pdf\SkPDFUtils.cpp" />
+    <ClCompile Include="..\src\pipe\SkGPipeRead.cpp" />
+    <ClCompile Include="..\src\pipe\SkGPipeWrite.cpp" />
+    <ClCompile Include="..\src\ports\SkDebug_win.cpp" />
+    <ClCompile Include="..\src\ports\SkFontHost_FreeType.cpp" />
+    <ClCompile Include="..\src\ports\SkFontHost_FreeType_common.cpp" />
+    <ClCompile Include="..\src\ports\SkFontHost_linux.cpp" />
+    <ClCompile Include="..\src\ports\SkGlobalInitialization_default.cpp" />
+    <ClCompile Include="..\src\ports\SkImageDecoder_WIC.cpp" />
+    <ClCompile Include="..\src\ports\SkMemory_malloc.cpp" />
+    <ClCompile Include="..\src\ports\SkOSFile_stdio.cpp" />
+    <ClCompile Include="..\src\ports\SkOSFile_win.cpp" />
+    <ClCompile Include="..\src\ports\SkThread_win.cpp" />
+    <ClCompile Include="..\src\ports\SkTime_win.cpp" />
+    <ClCompile Include="..\src\ports\SkTLS_win.cpp" />
+    <ClCompile Include="..\src\sfnt\SkOTUtils.cpp" />
+    <ClCompile Include="..\src\utils\SkBase64.cpp" />
+    <ClCompile Include="..\src\utils\SkBitSet.cpp" />
+    <ClCompile Include="..\src\utils\SkBoundaryPatch.cpp" />
+    <ClCompile Include="..\src\utils\SkCamera.cpp" />
+    <ClCompile Include="..\src\utils\SkCubicInterval.cpp" />
+    <ClCompile Include="..\src\utils\SkCullPoints.cpp" />
+    <ClCompile Include="..\src\utils\SkDeferredCanvas.cpp" />
+    <ClCompile Include="..\src\utils\SkDumpCanvas.cpp" />
+    <ClCompile Include="..\src\utils\SkInterpolator.cpp" />
+    <ClCompile Include="..\src\utils\SkLayer.cpp" />
+    <ClCompile Include="..\src\utils\SkMatrix44.cpp" />
+    <ClCompile Include="..\src\utils\SkMD5.cpp" />
+    <ClCompile Include="..\src\utils\SkMeshUtils.cpp" />
+    <ClCompile Include="..\src\utils\SkNinePatch.cpp" />
+    <ClCompile Include="..\src\utils\SkNWayCanvas.cpp" />
+    <ClCompile Include="..\src\utils\SkOSFile.cpp" />
+    <ClCompile Include="..\src\utils\SkParse.cpp" />
+    <ClCompile Include="..\src\utils\SkParseColor.cpp" />
+    <ClCompile Include="..\src\utils\SkParsePath.cpp" />
+    <ClCompile Include="..\src\utils\SkPictureUtils.cpp" />
+    <ClCompile Include="..\src\utils\SkProxyCanvas.cpp" />
+    <ClCompile Include="..\src\utils\SkRTConf.cpp" />
+    <ClCompile Include="..\src\utils\SkSHA1.cpp" />
+    <ClCompile Include="..\src\utils\SkThreadUtils_win.cpp" />
+    <ClCompile Include="..\src\utils\SkUnitMappers.cpp" />
+    <ClCompile Include="..\src\utils\win\SkAutoCoInitialize.cpp" />
+    <ClCompile Include="..\src\utils\win\SkDWriteFontFileStream.cpp" />
+    <ClCompile Include="..\src\utils\win\SkDWriteGeometrySink.cpp" />
+    <ClCompile Include="..\src\utils\win\SkHRESULT.cpp" />
+    <ClCompile Include="..\src\utils\win\SkIStream.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{93A886E3-56A1-496F-8D1D-CCAD51A26C14}</ProjectGuid>
+    <Keyword>StaticLibrary</Keyword>
+    <ProjectName>skia</ProjectName>
+    <RootNamespace>skia_strawberry</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.10240.0</WindowsTargetPlatformMinVersion>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\..\third_party\giflib;..\..\..\..\third_party\zlib;..\..\..\..\third_party\libpng;..\..\..\..\third_party\libjpeg;C:\libs\libwebp-0.5.0\src;$(ProjectDir)..\..\freetype\include;..\include\core;..\include\config;..\include\effects;..\include\gpu;..\include\image;..\include\images;..\include\lazy;..\include\pathops;..\include\pdf;..\include\pipe;..\include\ports;..\include\utils;..\include\utils\win;..\include\xml;..\src\core;..\src\images;..\src\image;..\src\sfnt;..\src\utils;..\src\utils\win;..\..\..\..\chromium\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SK_INTERNAL;SK_GAMMA_SRGB;SK_GAMMA_APPLY_TO_A8;SK_ALLOW_STATIC_GLOBAL_INITIALIZERS=1;SK_SUPPORT_GPU=0;SK_FORCE_DISTANCE_FIELD_TEXT=0;SK_BUILD_FOR_WIN32;_CRT_SECURE_NO_WARNINGS;GR_GL_FUNCTION_TYPE=__stdcall;_HAS_EXCEPTIONS=0;SK_DEVELOPER=1;WIN32;_LIB;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;FT2_BUILD_LIBRARY;USE_FREETYPE2_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\third_party\giflib;..\..\..\third_party\zlib;..\..\..\third_party\libpng;..\..\..\third_party\libjpeg;C:\libs\libwebp-0.5.0\src;$(SolutionDir)external-libraries\freetype\src\freetype\2.3.5\freetype-2.3.5\include;..\include\core;..\include\config;..\include\effects;..\include\gpu;..\include\image;..\include\images;..\include\lazy;..\include\pathops;..\include\pdf;..\include\pipe;..\include\ports;..\include\utils;..\include\utils\win;..\include\xml;..\src\core;..\src\image;..\src\sfnt;..\src\utils;..\src\utils\win;..\..\..\..\chromium\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SK_INTERNAL;SK_GAMMA_SRGB;SK_GAMMA_APPLY_TO_A8;SK_ALLOW_STATIC_GLOBAL_INITIALIZERS=1;SK_SUPPORT_GPU=0;SK_FORCE_DISTANCE_FIELD_TEXT=0;SK_BUILD_FOR_WIN32;_CRT_SECURE_NO_WARNINGS;GR_GL_FUNCTION_TYPE=__stdcall;_HAS_EXCEPTIONS=0;SK_DEVELOPER=1;WIN32;_LIB;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;FT2_BUILD_LIBRARY;USE_FREETYPE2_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\third_party\giflib;..\..\..\third_party\zlib;..\..\..\third_party\libpng;..\..\..\third_party\libjpeg;C:\libs\libwebp-0.5.0\src;$(SolutionDir)external-libraries\freetype\src\freetype\2.3.5\freetype-2.3.5\include;..\include\core;..\include\config;..\include\effects;..\include\gpu;..\include\image;..\include\images;..\include\lazy;..\include\pathops;..\include\pdf;..\include\pipe;..\include\ports;..\include\utils;..\include\utils\win;..\include\xml;..\src\core;..\src\image;..\src\sfnt;..\src\utils;..\src\utils\win;..\..\..\..\chromium\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SK_INTERNAL;SK_GAMMA_SRGB;SK_GAMMA_APPLY_TO_A8;SK_ALLOW_STATIC_GLOBAL_INITIALIZERS=1;SK_SUPPORT_GPU=0;SK_FORCE_DISTANCE_FIELD_TEXT=0;SK_BUILD_FOR_WIN32;_CRT_SECURE_NO_WARNINGS;GR_GL_FUNCTION_TYPE=__stdcall;_HAS_EXCEPTIONS=0;SK_DEVELOPER=1;WIN32;_LIB;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;FT2_BUILD_LIBRARY;USE_FREETYPE2_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\third_party\giflib;..\..\..\third_party\zlib;..\..\..\third_party\libpng;..\..\..\third_party\libjpeg;C:\libs\libwebp-0.5.0\src;$(SolutionDir)external-libraries\freetype\src\freetype\2.3.5\freetype-2.3.5\include;..\include\core;..\include\config;..\include\effects;..\include\gpu;..\include\image;..\include\images;..\include\lazy;..\include\pathops;..\include\pdf;..\include\pipe;..\include\ports;..\include\utils;..\include\utils\win;..\include\xml;..\src\core;..\src\image;..\src\sfnt;..\src\utils;..\src\utils\win;..\..\..\..\chromium\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SK_INTERNAL;SK_GAMMA_SRGB;SK_GAMMA_APPLY_TO_A8;SK_ALLOW_STATIC_GLOBAL_INITIALIZERS=1;SK_SUPPORT_GPU=0;SK_FORCE_DISTANCE_FIELD_TEXT=0;SK_BUILD_FOR_WIN32;_CRT_SECURE_NO_WARNINGS;GR_GL_FUNCTION_TYPE=__stdcall;_HAS_EXCEPTIONS=0;SK_DEVELOPER=1;WIN32;_LIB;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;FT2_BUILD_LIBRARY;USE_FREETYPE2_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\third_party\giflib;..\..\..\third_party\zlib;..\..\..\third_party\libpng;..\..\..\third_party\libjpeg;C:\libs\libwebp-0.5.0\src;$(SolutionDir)external-libraries\freetype\src\freetype\2.3.5\freetype-2.3.5\include;..\include\core;..\include\config;..\include\effects;..\include\gpu;..\include\image;..\include\images;..\include\lazy;..\include\pathops;..\include\pdf;..\include\pipe;..\include\ports;..\include\utils;..\include\utils\win;..\include\xml;..\src\core;..\src\image;..\src\sfnt;..\src\utils;..\src\utils\win;..\..\..\..\chromium\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SK_INTERNAL;SK_GAMMA_SRGB;SK_GAMMA_APPLY_TO_A8;SK_ALLOW_STATIC_GLOBAL_INITIALIZERS=1;SK_SUPPORT_GPU=0;SK_FORCE_DISTANCE_FIELD_TEXT=0;SK_BUILD_FOR_WIN32;_CRT_SECURE_NO_WARNINGS;GR_GL_FUNCTION_TYPE=__stdcall;_HAS_EXCEPTIONS=0;SK_DEVELOPER=1;WIN32;_LIB;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;FT2_BUILD_LIBRARY;USE_FREETYPE2_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\third_party\giflib;..\..\..\third_party\zlib;..\..\..\third_party\libpng;..\..\..\third_party\libjpeg;C:\libs\libwebp-0.5.0\src;$(SolutionDir)external-libraries\freetype\src\freetype\2.3.5\freetype-2.3.5\include;..\include\core;..\include\config;..\include\effects;..\include\gpu;..\include\image;..\include\images;..\include\lazy;..\include\pathops;..\include\pdf;..\include\pipe;..\include\ports;..\include\utils;..\include\utils\win;..\include\xml;..\src\core;..\src\image;..\src\sfnt;..\src\utils;..\src\utils\win;..\..\..\..\chromium\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SK_INTERNAL;SK_GAMMA_SRGB;SK_GAMMA_APPLY_TO_A8;SK_ALLOW_STATIC_GLOBAL_INITIALIZERS=1;SK_SUPPORT_GPU=0;SK_FORCE_DISTANCE_FIELD_TEXT=0;SK_BUILD_FOR_WIN32;_CRT_SECURE_NO_WARNINGS;GR_GL_FUNCTION_TYPE=__stdcall;_HAS_EXCEPTIONS=0;SK_DEVELOPER=1;WIN32;_LIB;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;FT2_BUILD_LIBRARY;USE_FREETYPE2_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
